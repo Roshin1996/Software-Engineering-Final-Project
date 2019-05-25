@@ -1,0 +1,29 @@
+Soft Message:
+A very simple, barebones P2P prototype made with consultation of a few online tutorials. The app allows for a very simple text based chat amongst 2 terminal windows, or more. 
+
+INSTRUCTIONS:
+
+To run, first install Node.js. 
+
+Then, navigate to the "softMessage" folder from a terminal. From here, run the following:
+node logic.js name1 name2 name3
+
+Where name1 - name 3 are the available usernames to pick from for the generated room. Theoretically any number will be possible, but with higher numbers, the more chances of overlapping ports, so 3 is recommended for best results. Also, keep usernames fairly short. 
+
+Nothing will happen in the main window. Next, open another terminal, and navigate to the same location, and run the following command:
+node logic.js name2 name1 name3
+
+name3 could have also been substituted in the front; the point is that the first name is the user, while the second 2 are peers. After running this, the two windows can chat, and a third can be added in similar fashion. Order of the 2 trailing peers does not matter.
+
+Example:
+
+Terminal1:
+node logic.js Vinay Roshin JeanClaude
+
+Terminal2:
+node logic.js Roshin Vinay JeanClaude
+
+Terminal3:
+node logic.js JeanClaude Vinay Roshin 
+
+After this, all 3 terminals can chat, and any 2 remaining ones can keep chatting even if one leaves. 

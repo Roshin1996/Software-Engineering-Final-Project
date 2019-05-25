@@ -1,0 +1,28 @@
+Ideal Chat Application: 
+A simple text chat app created by following online tutorials. Uses basic web design technologies along with Node.js, and various Node packages such as socket.io to manage P2P connections.
+
+Consists of 4 main functional files:
+
+chat.js
+Handles chat logic such as displaying, sending, and receiving messages
+
+index.js
+Handles high level logic, like connecting users and disconnecting them to each other
+
+index.html
+The code for the structure of the page, loosely
+
+style.css
+Handles the visual components
+
+INSTRUCTIONS
+
+To run, first install Node.js. 
+
+Then, simply navigate to the ideal-chat folder in any terminal, and run the following command:
+node index.js
+
+After this, go to any browser window and, in the url bar, go to "localhost:3000", and follow the commands to join the room. 
+
+To simulate a chat, either open another tab in the browser, or another browser entirely, and do the same thing. The 2 windows will then be able to communicate with each other. 
+
